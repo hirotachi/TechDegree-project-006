@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
-.word__fill .placeholder, .keyboard_letter {
+.word_fill .placeholder, .keyboard_letter {
   padding: 1rem;
   margin: .5rem;
   border-radius: 5px; }
@@ -85,14 +85,14 @@ ul {
 .word-board {
   margin-bottom: auto; }
 
-.word__fill {
+.word_fill {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
-  .word__fill .placeholder {
+  .word_fill .placeholder {
     background-color: #cdd0ce; }
     @media (min-width: 769px) {
-      .word__fill .placeholder {
+      .word_fill .placeholder {
         font-size: 2rem; } }
 
 .keyboard {
