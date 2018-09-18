@@ -72,12 +72,23 @@ ul {
   .game .heading {
     font-size: 2.2rem;
     color: #4a3c52;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
     margin-top: 2rem; }
     @media (min-width: 768px) {
       .game .heading {
         font-size: 5rem;
-        margin-bottom: 10rem; } }
+        margin-bottom: 5rem; } }
+  .game .hearts {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem; }
+    .game .hearts img {
+      width: 3rem;
+      margin-left: .5rem;
+      margin-bottom: 1rem; }
+      @media (min-width: 769px) {
+        .game .hearts img {
+          margin-bottom: 4rem; } }
   @media (min-width: 769px) {
     .game {
       justify-content: flex-start; } }
@@ -93,16 +104,17 @@ ul {
     background-color: #cdd0ce; }
     @media (min-width: 769px) {
       .word_fill .placeholder {
-        font-size: 2rem; } }
+        font-size: 2rem;
+        width: 4rem;
+        height: 4rem; } }
 
 .keyboard {
   display: flex;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   flex-wrap: wrap;
   justify-content: center; }
   @media (min-width: 769px) {
     .keyboard {
-      margin-bottom: 15rem;
       max-width: 500px;
       margin: 5rem auto; } }
   .keyboard_letter {

@@ -66,11 +66,25 @@
     .heading{
         font-size: 2.2rem;
         color: $color-secondary;
-        margin-bottom: 5rem;
+        margin-bottom: 4rem;
         margin-top: 2rem;
         @media (min-width: 768px){
             font-size: 5rem;
-            margin-bottom: 10rem;
+            margin-bottom: 5rem;
+        }
+    }
+
+    .hearts{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1rem;
+        img{
+            width: 3rem;
+            margin-left: .5rem;
+            margin-bottom: 1rem;
+            @media(min-width: 769px){
+                margin-bottom: 4rem;
+            }
         }
     }
 
@@ -87,29 +101,35 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
     .placeholder{
         @extend %placer;
         background-color: $color-tritary;
         @media (min-width: 769px){
             font-size: 2rem;
+            width: 4rem;
+            height: 4rem;
         }
     }
 }
 
 .keyboard{
     display: flex;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     flex-wrap: wrap;
     justify-content: center;
     @media(min-width: 769px){
-        margin-bottom: 15rem;
         max-width: 500px;
         margin: 5rem auto;
     }
     &_letter{
         @extend %placer;
         background-color: $color-dark;
+        @media (min-width: 769px){
+            // width: 3rem;
+        }
     }
 }
+
+
+
 
