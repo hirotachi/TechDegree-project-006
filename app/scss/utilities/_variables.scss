@@ -6,3 +6,10 @@ $color-btn-start: #e3b558;
 $color-white: #fff;
 
 $color-btn-start-dark: darken($color-btn-start, 30%);
+
+// extends
+%placer{
+    padding: 1rem;
+    margin: .5rem;
+    border-radius: 5px;
+}

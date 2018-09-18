@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+.word__fill .placeholder, .keyboard_letter {
+  padding: 1rem;
+  margin: .5rem;
+  border-radius: 5px; }
+
 * {
   margin: 0;
   padding: 0;
@@ -62,23 +67,43 @@ ul {
   display: flex;
   height: 100vh;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: center; }
   .game .heading {
     font-size: 2.2rem;
     color: #4a3c52;
-    margin: 3rem 0; }
+    margin-bottom: 5rem;
+    margin-top: 2rem; }
     @media (min-width: 768px) {
       .game .heading {
         font-size: 5rem;
         margin-bottom: 10rem; } }
-  .game .board {
-    margin-bottom: auto; }
+  @media (min-width: 769px) {
+    .game {
+      justify-content: flex-start; } }
+
+.word-board {
+  margin-bottom: auto; }
 
 .word__fill {
   display: flex;
-  justify-content: space-around; }
+  flex-wrap: wrap;
+  justify-content: center; }
   .word__fill .placeholder {
-    padding: 1rem;
-    background-color: #cdd0ce;
-    border-radius: 5px; }
+    background-color: #cdd0ce; }
+    @media (min-width: 769px) {
+      .word__fill .placeholder {
+        font-size: 2rem; } }
+
+.keyboard {
+  display: flex;
+  margin-bottom: 5rem;
+  flex-wrap: wrap;
+  justify-content: center; }
+  @media (min-width: 769px) {
+    .keyboard {
+      margin-bottom: 15rem;
+      max-width: 500px;
+      margin: 5rem auto; } }
+  .keyboard_letter {
+    background-color: #eee; }
