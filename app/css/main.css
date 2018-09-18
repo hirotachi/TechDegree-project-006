@@ -1,4 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+body {
+  font-family: "Montserrat", sans-serif; }
+
+ul {
+  list-style: none; }
+
+.greeting {
+  background-color: #4a2b58;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column; }
+  .greeting .start-message {
+    margin: 7rem 0;
+    font-size: 2rem; }
+    @media (min-width: 769px) {
+      .greeting .start-message {
+        font-size: 5rem; } }
+  .greeting button {
+    padding: 2rem;
+    border: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    background-color: #e3b558;
+    margin: 0 1rem;
+    margin-bottom: auto;
+    border-radius: 5px;
+    border-right: 2px solid #8b6517;
+    border-bottom: 2px solid #8b6517;
+    transition: .2s;
+    cursor: pointer; }
+    .greeting button:active {
+      outline: none;
+      border: none; }
+    .greeting button:focus {
+      outline: none; }
+    @media (min-width: 769px) {
+      .greeting button {
+        width: 10rem;
+        height: 5rem;
+        font-size: 1rem;
+        padding: .5rem;
+        margin: 0 auto;
+        margin-bottom: auto; } }
+  @media (min-width: 769px) {
+    .greeting {
+      justify-content: center; } }
+
+.game {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center; }
+  .game .heading {
+    font-size: 2.2rem;
+    color: #4a3c52;
+    margin: 3rem 0; }
+    @media (min-width: 768px) {
+      .game .heading {
+        font-size: 5rem;
+        margin-bottom: 10rem; } }
+  .game .board {
+    margin-bottom: auto; }
+
+.word__fill {
+  display: flex;
+  justify-content: space-around; }
+  .word__fill .placeholder {
+    padding: 1rem;
+    background-color: #cdd0ce;
+    border-radius: 5px; }

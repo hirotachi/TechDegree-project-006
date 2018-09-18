@@ -1,6 +1,9 @@
-import $ from "jquery";
+$(".game").hide();
 
-
-$("body").on("click", () => {
-    alert("clicked");
+$(".start-btn").on("click", function(e){
+   $(this).parent().fadeOut();
+    
+   $(".game").show();
 });
+
+
