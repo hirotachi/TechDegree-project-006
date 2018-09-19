@@ -4,6 +4,24 @@
   margin: .5rem;
   border-radius: 5px; }
 
+.hidden {
+  display: none; }
+
+.found {
+  background-color: lightgreen !important; }
+
+.notFound {
+  background-color: #dd6565 !important; }
+
+.letterFound {
+  background-color: lightgreen !important; }
+
+.complete {
+  background-color: lightgreen;
+  font-size: 4rem;
+  border-radius: 5px;
+  padding: 1rem; }
+
 * {
   margin: 0;
   padding: 0;
@@ -65,7 +83,7 @@ ul {
 
 .game {
   display: flex;
-  height: 100vh;
+  text-align: center;
   flex-direction: column;
   justify-content: space-between;
   text-align: center; }
@@ -78,17 +96,17 @@ ul {
       .game .heading {
         font-size: 5rem;
         margin-bottom: 5rem; } }
-  .game .hearts {
+  .game .hearts ul {
     display: flex;
     justify-content: center;
     padding-bottom: 1rem; }
-    .game .hearts img {
-      width: 3rem;
+    .game .hearts ul img {
+      width: 4rem;
       margin-left: .5rem;
       margin-bottom: 1rem; }
       @media (min-width: 769px) {
-        .game .hearts img {
-          margin-bottom: 4rem; } }
+        .game .hearts ul img {
+          margin-bottom: 2rem; } }
   @media (min-width: 769px) {
     .game {
       justify-content: flex-start; } }
@@ -118,4 +136,5 @@ ul {
       max-width: 500px;
       margin: 5rem auto; } }
   .keyboard_letter {
-    background-color: #eee; }
+    background-color: #eee;
+    cursor: pointer; }
