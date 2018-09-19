@@ -9,7 +9,7 @@
     justify-content: space-around;
     flex-direction: column;
 
-    .start-message{
+    .message{
         margin: 7rem 0;
         font-size: 2rem;
         @media (min-width: 769px){
@@ -131,6 +131,15 @@
             // width: 3rem;
         }
     }
+}
+
+
+
+.lost{
+    background-color: $color-wrong;
+    color: $color-white;
+    height: 100vh;
+
 }
 
 

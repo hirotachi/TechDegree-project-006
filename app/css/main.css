@@ -11,7 +11,7 @@
   background-color: lightgreen !important; }
 
 .notFound {
-  background-color: #dd6565 !important; }
+  background-color: #e95453 !important; }
 
 .letterFound {
   background-color: lightgreen !important; }
@@ -43,11 +43,11 @@ ul {
   display: flex;
   justify-content: space-around;
   flex-direction: column; }
-  .greeting .start-message {
+  .greeting .message {
     margin: 7rem 0;
     font-size: 2rem; }
     @media (min-width: 769px) {
-      .greeting .start-message {
+      .greeting .message {
         font-size: 5rem; } }
   .greeting button {
     padding: 2rem;
@@ -138,3 +138,8 @@ ul {
   .keyboard_letter {
     background-color: #eee;
     cursor: pointer; }
+
+.lost {
+  background-color: #e95453;
+  color: #fff;
+  height: 100vh; }

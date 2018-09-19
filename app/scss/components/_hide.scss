@@ -3,18 +3,18 @@
 }
 
 .found {
-    background-color: lightgreen !important;
+    background-color: $color-right !important;
 }
 .notFound{
-    background-color: rgb(221, 101, 101) !important;
+    background-color: $color-wrong !important;
 }
 
 .letterFound{
-    background-color: lightgreen !important;
+    background-color: $color-right !important;
 }
 
 .complete{
-    background-color: lightgreen;
+    background-color: $color-right;
     font-size: 4rem;
     border-radius: 5px;
     padding: 1rem;

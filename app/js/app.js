@@ -8,7 +8,7 @@ const $hearts = $(".hearts ul");
 $(".game").hide();
 
 
-$(".start-btn").on("click", function(e){
+$(".btn").on("click", function(e){
    $(this).parent().fadeOut(500); //fade the screen when the start game button clicked
     
    $(".game").show(); //show the game screen and remove the hide function
@@ -74,14 +74,15 @@ $(".keyboard_letter").on("click", function()  {
 // hide the game if the place is bigger than 5 and show the welcome message for now and rest the hreats src
     if(place > 4){
         $(".game").hide();
-        $(".greeting").show();
-        place = 0;
-        for(let i = 0; i < 5; i++){
-            $hearts.children().eq(i).children()[0].src = liveSrc;
-        }
-        $(".placeholder").each(function(){
-            $(this).text("");
+        
+        $(".btn").text("Try again").css({
+            backgroundColor: "white",
+            color: "#e95453"
         });
+        $(".greeting").css({
+            backgroundColor: "#e95453"
+        }).show();
+
     }
 
     // check if the word complete is the same as the one from strings and show end game
@@ -90,6 +91,18 @@ $(".keyboard_letter").on("click", function()  {
     }
     
 });
+
+
+$(".btn").on("click" function(){
+    $(".placeholder").each(function(){
+        $(this).text("");
+    });
+
+    place = 0;
+        for(let i = 0; i < 5; i++){
+            $hearts.children().eq(i).children()[0].src = liveSrc;
+        }
+})
 
 
 
