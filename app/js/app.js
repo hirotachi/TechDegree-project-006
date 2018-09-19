@@ -6,28 +6,14 @@ const liveSrc = "images/liveHeart.png";
 const $hearts = $(".hearts ul");
 
 $(".game").hide();
-
-
-$(".btn").on("click", function(e){
-   $(this).parent().fadeOut(500); //fade the screen when the start game button clicked
-    
-   $(".game").show(); //show the game screen and remove the hide function
-
-
-
    
-// insert random string from strings array into an li in .word_fill ul
-
- 
-    
-});
 
 const randIndex = Math.floor(Math.random() * strings.length); //generate random index based on strings length
-const current = strings[randIndex];
+const current = strings[randIndex]; //get current string in screen and assign it to "current"
 
+// add list item with word from current selected array
 for(let i = 0; i<strings[randIndex].length; i++){
  $(".word_fill").append(`<li class="placeholder">${strings[randIndex][i]}</li>`);
-  //get current string in screen and assign it to "current"
  }
 
  // removes spaces in string and replaces it by adding margin to the prev letter
@@ -46,10 +32,7 @@ for(let i = 0; i<strings[randIndex].length; i++){
      $(".keyboard").append(`<li class="keyboard_letter">${keyboard[i]}</li>`);
  }
 
-//  place current word letters randomly in keyboard
  
-
-
 // add live hearts to screen
 for(i = 0; i < 5; i++){
 $hearts.append(liveHeart)
@@ -62,13 +45,13 @@ $(".keyboard_letter").on("click", function()  {
         for (let i = 0; i < current.length; i++){
             if(current[i] === $(this).text()){
                 $(".placeholder").eq(i).text($(this).text()).addClass("letterFound");
-                $(this).addClass("found").off("click");
+                $(this).addClass("found");
             }
         }
     }else {
         $hearts.children().eq(place).children()[0].src = deadHeart;
         place++;
-        $(this).addClass("notFound").off("click");
+        $(this).addClass("notFound");
     }
 
 // hide the game if the place is bigger than 5 and show the welcome message for now and rest the hreats src
@@ -92,16 +75,24 @@ $(".keyboard_letter").on("click", function()  {
     
 });
 
-
-$(".btn").on("click" function(){
+// reset the game and remove modified css on click
+$(".btn").on("click", function(){
     $(".placeholder").each(function(){
-        $(this).text("");
+        $(this).text("").removeClass("letterFound");
+    });
+
+    $(".keyboard_letter").each(function(){
+        $(this).removeClass("notFound found");
     });
 
     place = 0;
-        for(let i = 0; i < 5; i++){
+    for(let i = 0; i < 5; i++){
             $hearts.children().eq(i).children()[0].src = liveSrc;
-        }
+    }
+
+    $(this).parent().fadeOut(500); //fade the screen when the start game button clicked
+    
+   $(".game").show(); //show the game screen and remove the hide function
 })
 
 

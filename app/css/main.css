@@ -138,8 +138,3 @@ ul {
   .keyboard_letter {
     background-color: #eee;
     cursor: pointer; }
-
-.lost {
-  background-color: #e95453;
-  color: #fff;
-  height: 100vh; }
