@@ -33,7 +33,7 @@ body {
 ul {
   list-style: none; }
 
-.greeting {
+.message-board {
   background-color: #4a2b58;
   width: 100%;
   height: 100vh;
@@ -43,13 +43,13 @@ ul {
   display: flex;
   justify-content: space-around;
   flex-direction: column; }
-  .greeting .message {
+  .message-board .message {
     margin: 7rem 0;
     font-size: 2rem; }
     @media (min-width: 769px) {
-      .greeting .message {
+      .message-board .message {
         font-size: 5rem; } }
-  .greeting button {
+  .message-board button {
     padding: 2rem;
     border: none;
     font-size: 2rem;
@@ -64,13 +64,13 @@ ul {
     border-bottom: 2px solid #8b6517;
     transition: .2s;
     cursor: pointer; }
-    .greeting button:active {
+    .message-board button:active {
       outline: none;
       border: none; }
-    .greeting button:focus {
+    .message-board button:focus {
       outline: none; }
     @media (min-width: 769px) {
-      .greeting button {
+      .message-board button {
         width: 10rem;
         height: 5rem;
         font-size: 1rem;
@@ -78,8 +78,11 @@ ul {
         margin: 0 auto;
         margin-bottom: auto; } }
   @media (min-width: 769px) {
-    .greeting {
+    .message-board {
       justify-content: center; } }
+  .message-board p {
+    font-size: 3rem;
+    margin-bottom: auto; }
 
 .game {
   display: flex;

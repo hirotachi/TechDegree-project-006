@@ -62,15 +62,16 @@ $(".keyboard_letter").on("click", function()  {
             backgroundColor: "white",
             color: "#e95453"
         });
-        $(".greeting").css({
+        $(".message-board").css({
             backgroundColor: "#e95453"
         }).show();
-
+        $(".message-board").append(`<p>You lose!</p>`);
     }
 
     // check if the word complete is the same as the one from strings and show end game
     if($(".word_fill").text().trim() === current.replace(" ", "")){
         $(".word_fill").html(`<li class="complete">${current}<li>`);
+        
     }
     
 });
@@ -81,6 +82,7 @@ $(".btn").on("click", function(){
         $(this).text("").removeClass("letterFound");
     });
 
+    $("p").remove();
     $(".keyboard_letter").each(function(){
         $(this).removeClass("notFound found");
     });
