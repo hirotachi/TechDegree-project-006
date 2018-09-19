@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
-.word_fill .placeholder, .keyboard_letter {
+.keyboard_letter, .word_fill .placeholder {
   padding: 1rem;
   margin: .5rem;
   border-radius: 5px; }
@@ -32,6 +32,19 @@ body {
 
 ul {
   list-style: none; }
+
+.keyboard {
+  display: flex;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  justify-content: center; }
+  @media (min-width: 769px) {
+    .keyboard {
+      max-width: 700px;
+      margin: 5rem auto; } }
+  .keyboard_letter {
+    background-color: #eee;
+    cursor: pointer; }
 
 .message-board {
   background-color: #4a2b58;
@@ -141,16 +154,3 @@ ul {
         font-size: 2rem;
         width: 4rem;
         height: 4rem; } }
-
-.keyboard {
-  display: flex;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
-  justify-content: center; }
-  @media (min-width: 769px) {
-    .keyboard {
-      max-width: 700px;
-      margin: 5rem auto; } }
-  .keyboard_letter {
-    background-color: #eee;
-    cursor: pointer; }

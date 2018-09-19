@@ -1,4 +1,25 @@
-const strings = ["lucky", "the lake", "tester testing"];
+const strings = ["storage", "desk", "represent",
+ "wrestle", "particle", "carpet",
+  "first", "guard", "objective",
+   "score", "serious", "hilarious",
+    "duty", "leaf", "laborer", "tight",
+     "lose", "ideology", "crew", "motif",
+      "stamp", "voice", "watch", "different",
+       "ruin", "intermediate", "elegant", "aunt",
+        "deteriorate", "frog", "adoption", "breakdown",
+         "lunch", "specimen", "edge", "spit", "prayer", "bulb",
+          "basin", "pen", "participate", "fan", "gravel", "auditor",
+           "golf", "mist", "still", "glow", "continuous", "elaborate",
+            "eye", "presence", "decline", "floor", "hypothesis", "underline",
+             "fountain", "secular", "perfume", "urgency", "announcement", "preference",
+              "lazy", "pill", "center", "headquarters", "grain", "temptation", "raid",
+               "bush", "achieve", "resort", "attractive", "print", "disappear", "eternal",
+                "personal", "video", "housewife", "confuse", "tempt", "unique", "night", "nut",
+                 "investigation", "bare", "banner", "polite", "preparation", "means", "diagram",
+                  "nomination", "passage", "dribble", "moral", "fox", "earthquake", "mobile",
+                   "cart", "day"];
+
+
 const keyboard = "abcdefghijklmnopqrstuvwxyz";
 const liveHeart = `<li><img src="images/liveHeart.png" alt="alive heart"></li>`;
 const deadHeart = "images/lostHeart.png";
