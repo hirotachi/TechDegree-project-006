@@ -102,6 +102,23 @@
 
 .word-board{
     margin-bottom: auto;
+    .another{
+        padding: 1rem;
+        border-radius: 5px;
+        border: none;
+        text-transform: uppercase;
+        background-color: $color-another;
+        color: $color-white;
+        margin: 1rem 0;
+        cursor: pointer;
+        &:focus{
+            outline: none;
+        }
+
+        &:hover{
+            background-color: $color-another-light;
+        }
+    }
 }
 
 .word_fill{
@@ -125,7 +142,7 @@
     flex-wrap: wrap;
     justify-content: center;
     @media(min-width: 769px){
-        max-width: 500px;
+        max-width: 700px;
         margin: 5rem auto;
     }
     &_letter{

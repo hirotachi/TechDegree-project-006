@@ -116,6 +116,19 @@ ul {
 
 .word-board {
   margin-bottom: auto; }
+  .word-board .another {
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    background-color: #3481c9;
+    color: #fff;
+    margin: 1rem 0;
+    cursor: pointer; }
+    .word-board .another:focus {
+      outline: none; }
+    .word-board .another:hover {
+      background-color: #70a7da; }
 
 .word_fill {
   display: flex;
@@ -136,7 +149,7 @@ ul {
   justify-content: center; }
   @media (min-width: 769px) {
     .keyboard {
-      max-width: 500px;
+      max-width: 700px;
       margin: 5rem auto; } }
   .keyboard_letter {
     background-color: #eee;

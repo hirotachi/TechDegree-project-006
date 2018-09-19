@@ -6,6 +6,8 @@ $color-btn-start: #e3b558;
 $color-white: #fff;
 $color-right: lightgreen;
 $color-wrong: #e95453;
+$color-another: rgb(52, 129, 201);
+$color-another-light: lighten($color-another, 15%);
 
 
 $color-btn-start-dark: darken($color-btn-start, 30%);
