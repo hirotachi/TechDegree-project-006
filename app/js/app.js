@@ -33,6 +33,15 @@ function randomize(number){
     return number = Math.floor(Math.random() * number);
 }
 
+// shuffle passed array
+function shuffle(a) {
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+}
+
 // choose word from strings array and append the letters as li in word_fill
 function createWord(){
     $(".word_fill").empty();
@@ -158,13 +167,6 @@ $(".another").on("click", function(){
     
 });
 
-// shuffle passed array
-function shuffle(a) {
-    for (let i = a.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [a[i], a[j]] = [a[j], a[i]];
-    }
-    return a;
-}
+
 
 
